@@ -1,12 +1,11 @@
 import vectorbt as vbt
-import pandas as pd 
+import numpy as np
+import pandas as pd
 
- 
-cripto_price =vbt.YFData.download(
-        ["BTC-EUR","ETH-EUR","XMR.EUR"],
+
+btc_price = vbt.YFData.download(
+        ["BTC-EUR","XMR-EUR","ETH-EUR"],
         missing_index='drop').get("Close")
 
-print(cripto_price.tail())
+print(btc_price.tail())
  
-
-
