@@ -3,7 +3,7 @@ from tkinter import ttk
 import vectorbt as vbt
 import pandas as pd
 
-# Função para obter os últimos três valores de fechamento das criptomoedas
+# Função para obter os últimos três valores de fecho das criptomoedas
 def get_crypto_data():
     cript_price = vbt.YFData.download(
         ["BTC-EUR", "XMR-EUR", "ETH-EUR"],
